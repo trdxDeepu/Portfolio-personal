@@ -2,9 +2,10 @@ import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact } from 'react-icons/fa'
 import { LuGraduationCap } from 'react-icons/lu'
-// import corpcommentImg from '@/public/corpcomment.png'
-// import rmtdevImg from '@/public/rmtdev.png'
-// import wordanalyticsImg from '@/public/wordanalytics.png'
+import realestate from '@/public/Real-Estate-app.png'
+import wildoasis from '@/public/The-Wild-oasis.png'
+import fastpizza from '@/public/Fast-React-Pizza.png'
+import packaging from '@/public/Packaging.png'
 
 export const links = [
   {
@@ -62,25 +63,38 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'CorpComment',
+    title: 'Real Estate App',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    // imageUrl: corpcommentImg
+      'I created a Real estate app where a user can put his/her home to on sell and rent. A user can create listings of home those he/she wants to sell and put on rent.',
+    tags: ['React', 'Firebase', 'Tailwind', 'React-Router-Dom'],
+    imageUrl: realestate
   },
   {
-    title: 'rmtDev',
+    title: 'The Wild Oasis',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    // imageUrl: rmtdevImg
+      'The wild oasis app is a hotel app where user can create there own listings of cabins and can book the cabins where user can check-in, check-out the hotel.',
+    tags: [
+      'React',
+      'TanStack',
+      'Styled-Components',
+      'Supabase',
+      'React-Router-Dom'
+    ],
+    imageUrl: wildoasis
   },
   {
-    title: 'Word Analytics',
+    title: 'Fast React pizza',
     description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    // imageUrl: wordanalyticsImg
+      'A pizza web app where a user can create and order and can increase and decrease the quantities of pizza and can get location by using getposition to check delivery also.',
+    tags: ['React', 'Redux', 'Tailwind', 'Redux-Toolkit', 'React-Router-Dom'],
+    imageUrl: fastpizza
+  },
+  {
+    title: 'Packaging app',
+    description:
+      'A packaging app where a user can check what things he has packed. User can make list and sort the things according to the input order, description, and packed status.',
+    tags: ['React', 'css'],
+    imageUrl: packaging
   }
 ] as const
 
