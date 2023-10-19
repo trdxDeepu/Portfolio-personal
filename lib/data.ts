@@ -6,6 +6,8 @@ import realestate from '@/public/Real-Estate-app.png'
 import wildoasis from '@/public/The-Wild-oasis.png'
 import fastpizza from '@/public/Fast-React-Pizza.png'
 import packaging from '@/public/Packaging.png'
+import { faHtml5, faCss3, faJs, faReact, faNode, faGit, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faServer, faCodeBranch, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 export const links = [
   {
@@ -93,29 +95,24 @@ export const projectsData = [
     title: 'Packaging app',
     description:
       'A packaging app where a user can check what things he has packed. User can make list and sort the things according to the input order, description, and packed status.',
-    tags: ['React', 'css'],
+    tags: ['React', 'css','Hooks'],
     imageUrl: packaging
   }
 ] as const
 
+
 export const skillsData = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Node.js',
-  'Git',
-  'Tailwind',
-  'Prisma',
-  'MongoDB',
-  'Redux',
-  'GraphQL',
-  'Apollo',
-  'Express',
-  'PostgreSQL',
-  'Python',
-  'Django',
-  'Framer Motion'
-] as const
+  { skill: 'HTML', icon: faHtml5 },
+  { skill: 'CSS', icon: faCss3 },
+  { skill: 'JavaScript', icon: faJs },
+  { skill: 'Python', icon: faPython },
+  { skill: 'React', icon: faReact },
+  { skill: 'Next.js', icon: faReact },
+  { skill: 'Git', icon: faGit },
+  { skill: 'Tailwind', icon: faCss3 },
+  { skill: 'Redux', icon: faCodeBranch },
+  { skill: 'React Query', icon: faCodeBranch },
+  { skill: 'Firebase', icon: faDatabase },
+  { skill: 'Supabase', icon: faDatabase },
+
+];
