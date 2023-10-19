@@ -3,11 +3,18 @@
 import React, { useRef } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { projectsData } from '@/lib/data'
+import {AiFillEye} from 'react-icons/ai'
 
 type ProjectProps = typeof projectsData[number]
-import { projectsData } from '@/lib/data'
 
-function Project ({ title, description, tags, imageUrl }: ProjectProps) {
+function Project ({
+  title,
+  description,
+  tags,
+  imageUrl,
+  projectLink
+}: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null)
 
   const { scrollYProgress } = useScroll({
@@ -17,8 +24,6 @@ function Project ({ title, description, tags, imageUrl }: ProjectProps) {
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.4, 1])
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.1, 1])
-
-
 
   return (
     <motion.div
@@ -52,6 +57,7 @@ function Project ({ title, description, tags, imageUrl }: ProjectProps) {
               </li>
             ))}
           </ul>
+          
         </div>
         <Image
           src={imageUrl}
@@ -63,6 +69,7 @@ function Project ({ title, description, tags, imageUrl }: ProjectProps) {
         group-even:group-hover:-translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2
         '
         />
+       
       </section>
     </motion.div>
   )

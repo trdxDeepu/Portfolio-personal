@@ -4,6 +4,7 @@ import './global.css'
 import Header from '@/components/header'
 import ActiveSectionContextProvider from '@/context/active-section-context'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

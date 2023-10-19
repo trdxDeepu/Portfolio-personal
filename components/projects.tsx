@@ -6,16 +6,16 @@ import { projectsData } from '@/lib/data'
 import Project from './project'
 import { useSectionInView } from '@/hooks/hooks'
 
-
-
 export default function Projects () {
-
-  
- const {ref} = useSectionInView('Projects',0.3)
-
+  const { ref } = useSectionInView('Projects', 0.3)
 
   return (
-    <section id='projects' className='scroll-mt-28 mb-28' ref={ref}>
+    <section
+      id='projects'
+      className='scroll-mt-28 mb-28 cursor-pointer'
+      ref={ref}
+      
+    >
       <SectionHeading>My Projects </SectionHeading>
       <div>
         {projectsData.map((project, index) => (

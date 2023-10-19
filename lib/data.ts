@@ -69,7 +69,8 @@ export const projectsData = [
     description:
       'I created a Real estate app where a user can put his/her home to on sell and rent. A user can create listings of home those he/she wants to sell and put on rent.',
     tags: ['React', 'Firebase', 'Tailwind', 'React-Router-Dom'],
-    imageUrl: realestate
+    imageUrl: realestate,
+    projectLink :"https://estate-app-bice.vercel.app/"
   },
   {
     title: 'The Wild Oasis',
@@ -82,7 +83,8 @@ export const projectsData = [
       'Supabase',
       'React-Router-Dom'
     ],
-    imageUrl: wildoasis
+    imageUrl: wildoasis,
+    projectLink :"https://the-wild-oasis-lilac-delta.vercel.app/dashboard"
   },
   {
     title: 'Fast React pizza',
