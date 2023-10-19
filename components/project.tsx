@@ -18,6 +18,8 @@ function Project ({ title, description, tags, imageUrl }: ProjectProps) {
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.4, 1])
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.1, 1])
 
+
+
   return (
     <motion.div
       ref={ref}
@@ -26,6 +28,7 @@ function Project ({ title, description, tags, imageUrl }: ProjectProps) {
         opacity: opacityProgress
       }}
       className='group mb-3 sm:mb-8 last:mb-0  even:pl-8'
+      id='projects'
     >
       <section
         className=' bg-gray-100 max-w-[42rem] rounded-2xl  border border-black/5 overflow-hidden
