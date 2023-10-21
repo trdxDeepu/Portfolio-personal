@@ -13,7 +13,7 @@ function Project ({
   description,
   tags,
   imageUrl,
-  projectLink
+ 
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null)
 
