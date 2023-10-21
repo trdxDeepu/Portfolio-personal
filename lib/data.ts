@@ -7,7 +7,7 @@ import wildoasis from '@/public/The-Wild-oasis.png'
 import fastpizza from '@/public/Fast-React-Pizza.png'
 import packaging from '@/public/Packaging.png'
 import { faHtml5, faCss3, faJs, faReact, faNode, faGit, faPython } from '@fortawesome/free-brands-svg-icons';
-import { faServer, faCodeBranch, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import {  faCodeBranch, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 export const links = [
   {
@@ -38,28 +38,44 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
+    title: '10',
+    location: 'Delhi,India',
     description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+      'I have done my 10 from SBBM Govt. Sarvodaya Vidyalaya with 9.8 CGPA.',
     icon: React.createElement(LuGraduationCap),
-    date: '2019'
+    date: '2017-2018'
   },
   {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
+    title: '12',
+    location: 'Delhi,India',
     description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+      'I have done my 12 from SBBM Govt. Sarvodaya Vidyalaya with 72 %.',
+    icon: React.createElement(LuGraduationCap),
+    date: '2018-2019'
+  },
+  {
+    title: 'B.tech',
+    location: 'Delhi,India',
+    description:
+      'I am recently graduated in B.tech from NSUT East Campus in Electronics and communication branch with 8.4 CGPA.',
+    icon: React.createElement(LuGraduationCap),
+    date: '2019-2023'
+  },
+  {
+    title: 'Web developer',
+    location: 'Remote',
+    description:
+      'I worked as a Web developer for 1 months in Sparks foundation.I have work with team and done my task within the time frame.',
     icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021'
+    date: 'April 2022 - May-2022'
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
+    title: 'Open Source Contributer',
+    location: 'Remote',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I have successfully contributed to Hacktoberfest  in which i have contributed in some github reposiories in the field of web development. I have get an achivement of getting certifcate of planting a tree. ",
     icon: React.createElement(FaReact),
-    date: '2021 - present'
+    date: 'October-2023'
   }
 ] as const
 

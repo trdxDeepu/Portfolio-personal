@@ -17,9 +17,9 @@ export default function Experience () {
   console.log(VerticalTimelineElement)
 
   return (
-    <section id='experience'>
+    <section id='experience' ref={ref}>
       <SectionHeading>Experience</SectionHeading>
-      <VerticalTimeline lineColor='#e5e7eb'>
+      <VerticalTimeline lineColor='#e5e7eb' animate={true}>
         {experiencesData.map((item, index) => (
           <>
             <VerticalTimelineElement
