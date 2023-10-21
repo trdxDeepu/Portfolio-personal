@@ -9,9 +9,11 @@ import { HiDownload } from 'react-icons/hi'
 import { FaGithubSquare } from 'react-icons/fa'
 
 import { useSectionInView } from '@/hooks/hooks'
+import { useActiveSectionContext } from '@/context/active-section-context'
 
 const Intro = () => {
   const { ref } = useSectionInView('Home', 0.75)
+  const { setActiveSection, setTimeofLastClick } = useActiveSectionContext()
 
   return (
     <section
@@ -84,28 +86,32 @@ const Intro = () => {
         <Link
           href='#contact'
           className='flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105'
+          onClick={() => {
+            setActiveSection('Contact')
+            setTimeofLastClick(Date.now())
+          }}
         >
           Contact me here{' '}
           <BsArrowRight className='transition opacity-70 group-hover:translate-x-1 ' />{' '}
         </Link>
 
         <a
-          className='flex items-center gap-2 py-3 text-gray-900 bg-white border rounded-full outline-none cursor-pointer px-7 group focus:scale-110 hover:scale-110 active:scale-105 border-black/10'
+          className='flex items-center gap-2 py-3 text-gray-900 bg-white rounded-full outline-none cursor-pointer px-7 group focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10  dark:text-white/60'
           href='/DeependraSingh__Resume.pdf'
           download={true}
         >
           Download CV{' '}
-          <HiDownload className='transition translate-y-0 opacity-70 group-hover:translate-y-1 hover:text-gray-950' />{' '}
+          <HiDownload className='transition translate-y-0 opacity-70 group-hover:translate-y-1 hover:text-gray-950   ' />{' '}
         </a>
         <a
-          className='flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full focus:scale-110 hover:scale-110 active:scale-105 hover:text-gray-950'
+          className='flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full focus:scale-110 hover:scale-110 active:scale-105 hover:text-gray-950 dark:bg-white/10 dark:text-white/60'
           href='https://www.linkedin.com/in/deependrasingh/'
           target='_blank'
         >
           <BsLinkedin />
         </a>
         <a
-          className='flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full text-[1.35rem] focus:scale-110 hover:scale-110  active:scale-105 hover:text-gray-950'
+          className='flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full text-[1.35rem] focus:scale-110 hover:scale-110  active:scale-105 hover:text-gray-950 dark:bg-white/10 dark:text-white/60'
           href='https://github.com/trdxlucifer'
           target='_blank'
         >

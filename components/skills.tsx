@@ -22,7 +22,7 @@ const fadeInAnimationVariants = {
 }
 
 export default function Skills () {
-  const { ref } = useSectionInView('Skills', 0.85)
+  const { ref } = useSectionInView('Skills', 0.9)
 
   return (
     <section
@@ -39,8 +39,8 @@ export default function Skills () {
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className='bg-white border border-black/[0.1] rounded-xl 
-                px-5 py-3 w-28 text-center '
+            className='bg-white borderBlack rounded-xl 
+                px-5 py-3 w-28 text-center dark:bg-white/10 dark:text-white/80 '
             variants={fadeInAnimationVariants}
             initial='initial'
             whileInView='animate'
@@ -48,7 +48,7 @@ export default function Skills () {
           >
             <FontAwesomeIcon
               icon={skill.icon}
-              className='text-gray-700 py-2 px-4 hover:text-gray-950'
+              className='text-gray-700 py-2 px-4 hover:text-gray-950 dark:text-white/60 dark:hover:text-white/80'
               size='2x'
             />
             {skill.skill}

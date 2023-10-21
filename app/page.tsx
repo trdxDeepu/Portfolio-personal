@@ -5,17 +5,23 @@ import Intro from '@/components/intro'
 import Projects from '@/components/projects'
 import Sectiondivider from '@/components/sectiondivider'
 import Skills from '@/components/skills'
+import Contact from '@/components/contact'
+import { Toaster } from 'react-hot-toast'
+
 
 
 export default function Home () {
   return (
     <main className='flex flex-col items-center px-4'>
+      <Toaster/>
       <Intro />
       <Sectiondivider/>
       <About/>
       <Projects/>
       <Skills/>
       <Experience/>
+      <Contact/>
+      
       </main>
   )
 }

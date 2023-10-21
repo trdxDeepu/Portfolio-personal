@@ -37,14 +37,14 @@ export const links = [
 ] as const
 
 export const experiencesData = [
-  {
-    title: '10',
-    location: 'Delhi,India',
-    description:
-      'I have done my 10 from SBBM Govt. Sarvodaya Vidyalaya with 9.8 CGPA.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2017-2018'
-  },
+  // {
+  //   title: '10',
+  //   location: 'Delhi,India',
+  //   description:
+  //     'I have done my 10 from SBBM Govt. Sarvodaya Vidyalaya with 9.8 CGPA.',
+  //   icon: React.createElement(LuGraduationCap),
+  //   date: '2017-2018'
+  // },
   {
     title: '12',
     location: 'Delhi,India',
