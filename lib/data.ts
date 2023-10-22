@@ -100,7 +100,7 @@ export const projectsData = [
       'React-Router-Dom'
     ],
     imageUrl: wildoasis,
-    projectLink :"https://the-wild-oasis-lilac-delta.vercel.app/dashboard"
+    projectLink :"https://the-wild-oasis-lilac-delta.vercel.app/"
   },
   {
     title: 'Fast React pizza',
