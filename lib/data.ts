@@ -107,14 +107,16 @@ export const projectsData = [
     description:
       'A pizza web app where a user can create and order and can increase and decrease the quantities of pizza and can get location by using getposition to check delivery also.',
     tags: ['React', 'Redux', 'Tailwind', 'Redux-Toolkit', 'React-Router-Dom'],
-    imageUrl: fastpizza
+    imageUrl: fastpizza,
+    projectLink :"https://fast-react-pizza-co-blush.vercel.app/"
   },
   {
     title: 'Packaging app',
     description:
       'A packaging app where a user can check what things he has packed. User can make list and sort the things according to the input order, description, and packed status.',
     tags: ['React', 'css','Hooks'],
-    imageUrl: packaging
+    imageUrl: packaging,
+    projectLink :"https://packing-app.vercel.app/"
   }
 ] as const
 
