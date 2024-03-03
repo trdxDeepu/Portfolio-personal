@@ -48,7 +48,7 @@ function About () {
         I,enjoy playing video games, watching movies. I also enjoy
         <span className='font-medium'> learning new things </span>. I am
         currently learning about
-        <span className='font-medium'> TypeScript and Next.js </span>
+        <span className='font-medium'>  Next.js and TypeScript and Nodejs </span>
       </p>
     </motion.section>
   )

@@ -85,7 +85,7 @@ const Intro = () => {
       >
         <Link
           href='#contact'
-          className='flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105'
+          className='flex items-center justify-between gap-3 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105'
           onClick={() => {
             setActiveSection('Contact')
             setTimeofLastClick(Date.now())
@@ -112,7 +112,7 @@ const Intro = () => {
         </a>
         <a
           className='flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full text-[1.35rem] focus:scale-110 hover:scale-110  active:scale-105 hover:text-gray-950 dark:bg-white/10 dark:text-white/60'
-          href='https://github.com/trdxlucifer'
+          href='https://github.com/trdxDeepu'
           target='_blank'
         >
           <FaGithubSquare />
