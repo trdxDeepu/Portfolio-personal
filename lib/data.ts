@@ -6,6 +6,7 @@ import realestate from "@/public/Real-Estate-app.png";
 import wildoasis from "@/public/The-Wild-oasis.png";
 import fastpizza from "@/public/Fast-React-Pizza.png";
 import packaging from "@/public/Packaging.png";
+import evento from "@/public/evento.png";
 import {
   faHtml5,
   faCss3,
@@ -59,7 +60,7 @@ export const experiencesData = [
     description:
       "I have done my 12 from SBBM Govt. Sarvodaya Vidyalaya with 72 %.",
     icon: React.createElement(LuGraduationCap),
-    date: "2018-2019",
+    date: "2018 - 2019",
   },
   {
     title: "B.tech",
@@ -67,7 +68,7 @@ export const experiencesData = [
     description:
       "I am recently graduated in B.tech from NSUT East Campus in Electronics and communication branch with 8.4 CGPA.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019-2023",
+    date: "2019 - 2023",
   },
   {
     title: "Web developer",
@@ -75,7 +76,7 @@ export const experiencesData = [
     description:
       "I worked as a Web developer for 1 months in Sparks foundation.I have work with team and done my task within the time frame.",
     icon: React.createElement(CgWorkAlt),
-    date: "April 2022 - May-2022",
+    date: "April 2022 - May - 2022",
   },
   {
     title: "Open Source Contributer",
@@ -83,7 +84,7 @@ export const experiencesData = [
     description:
       "I have successfully contributed to Hacktoberfest  in which i have contributed in some github reposiories in the field of web development. I have get an achivement of getting certifcate of planting a tree. ",
     icon: React.createElement(FaReact),
-    date: "October-2023",
+    date: "October - 2023",
   },
   {
     title: "React Developer,Intern",
@@ -91,7 +92,7 @@ export const experiencesData = [
     description:
       "Currently working as a React developer Intern at Thor Solution,where i have used all my skills in creating projects, and learn how to be a part of team, how to work in industry level. I have learned new things like headless CMS, and Gsap animation,Next.js ",
     icon: React.createElement(FaReact),
-    date: "November-Present",
+    date: "November 2023 - April 2024",
   },
 ] as const;
 
@@ -105,18 +106,19 @@ export const projectsData = [
     projectLink: "https://estate-app-bice.vercel.app/",
   },
   {
-    title: "The Wild Oasis",
+    title: "Evento",
     description:
-      "The wild oasis app is a hotel app where user can create there own listings of cabins and can book the cabins where user can check-in, check-out the hotel.",
+      "Created event app with Next.js, TypeScript, Prisma, Zod, and Framer Motion. Efficient data retrieval with Prisma, type safety via Zod.",
     tags: [
-      "React",
-      "TanStack",
-      "Styled-Components",
-      "Supabase",
-      "React-Router-Dom",
+      "Next.js",
+      "Tailwind Css",
+      "Prisma",
+      "TypeScript",
+      "Zod",
+      "Framer motion",
     ],
-    imageUrl: wildoasis,
-    projectLink: "https://the-wild-oasis-lilac-delta.vercel.app/",
+    imageUrl: evento,
+    projectLink: "https://evento-event-nine.vercel.app/",
   },
   {
     title: "Fast React pizza",

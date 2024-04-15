@@ -68,9 +68,9 @@ const Intro = () => {
         <span className='font-bold'>, I&apos;m Deependra Singh.</span> I&apos;m
         a<span className='font-bold'> FrontEnd Developer </span>
         with skill of
-        <span className='italic font-bold underline '> React </span>
+        <span className='italic font-bold underline '> React, Next.js, TypeScript </span>
         and currently learning{' '}
-        <span className='italic font-bold underline'>(Next.js)</span>.
+        <span className='italic font-bold underline'>(BackEnd Development  )</span>.
       </motion.h1>
 
       <motion.div

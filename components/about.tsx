@@ -24,18 +24,18 @@ function About () {
         I have completed my graduation in
         <span className='font-medium'> B.tech </span>
         <span className='font-medium'> ECE. </span>I am passionate about
-        <span className='font-medium italic'> web development. </span>
-        As a <span className='italic'> Fresher, </span>I wanted to gain some{' '}
+        <span className='font-medium italic'> Web development. </span>
+        I have  <span className='italic'> 6 months   </span> of {' '}
         <span className='font-medium'> experience </span>
-        in industry that how things work in
-        <span className='font-medium italic'> real world applications. </span>
+        as React Developer at 
+        <span className='font-medium italic'> Thor Solutions. </span>
         My core stack is{' '}
         <span className='font-medium'>
           {' '}
-          React,Styled Component,TailwindCSS,Supabase,RESTApi.{' '}
+          React, Next.js, Styled Component,TailwindCSS, Supabase, RESTAPI.{' '}
         </span>
         I am also familiar with{' '}
-        <span className='font-medium italic'> Typescript,MongoDB. </span>
+        <span className='font-medium italic'> Typescript, MongoDB. </span>
         I&apos;m currently looking for an
         <span className='font-bold'> Full time opportunity </span> and
         <span className='font-bold italic'> internship </span>
@@ -48,7 +48,7 @@ function About () {
         I,enjoy playing video games, watching movies. I also enjoy
         <span className='font-medium'> learning new things </span>. I am
         currently learning about
-        <span className='font-medium'>  Next.js and TypeScript and Nodejs </span>
+        <span className='font-medium'>  BackEnd Development </span>
       </p>
     </motion.section>
   )

@@ -36,7 +36,7 @@ export default function Project ({
       href={projectLink}
       target='_blank'
       >
-      <section className='bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden 
+      <section className='bg-gray-100 max-w-[44rem] border border-black/5 rounded-lg overflow-hidden 
       sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition 
       hover:backdrop-blur-md
       sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20'>
