@@ -30,7 +30,7 @@ export default function Project ({
         scale: scaleProgess,
         opacity: opacityProgess
       }}
-      className='group mb-3 sm:mb-8 last:mb-0'
+      className='group mb-4 sm:mb-8 last:mb-0'
     >
       <Link
       href={projectLink}
