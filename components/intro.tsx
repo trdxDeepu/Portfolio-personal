@@ -19,6 +19,20 @@ const Intro = () => {
   const { ref } = useSectionInView("Home", 0.75);
   const { setActiveSection, setTimeofLastClick } = useActiveSectionContext();
 
+  function handleContact() {
+    window.location.href = "#contact";
+  }
+
+  function handleDownload() {
+    window.open("/DeependraSinghResume.pdf", "_blank");
+  }
+  function handleGithub() {
+    window.open("https://github.com/trdxDeepu", "_blank");
+  }
+  function handleLinkedin() {
+    window.open("https://www.linkedin.com/in/deependrasingh/", "_blank");
+  }
+
   return (
     <section
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
@@ -115,22 +129,18 @@ const Intro = () => {
           ease: "backInOut",
         }}
       >
-        <ShimmerButton>
+        <ShimmerButton onClick={handleContact}>
           <Link
             href="#contact"
             // className="flex items-center justify-between gap-3 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
             className="text-white flex items-center justify-between gap-3 dark:text-white/60 "
-            onClick={() => {
-              setActiveSection("Contact");
-              setTimeofLastClick(Date.now());
-            }}
           >
             Contact me here{" "}
             <BsArrowRight className="transition opacity-70 group-hover:translate-x-1 " />{" "}
           </Link>
         </ShimmerButton>
 
-        <ShimmerButton background="">
+        <ShimmerButton background="" onClick={handleDownload}>
           <a
             className="flex items-center gap-2    dark:text-white/60"
             // className=" py-3 text-gray-900 bg-white rounded-full outline-none cursor-pointer px-7 group focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10  dark:text-white/60"
@@ -141,7 +151,11 @@ const Intro = () => {
             <HiDownload className="transition translate-y-0 opacity-70 group-hover:translate-y-1 hover:text-gray-950   " />{" "}
           </a>
         </ShimmerButton>
-        <ShimmerButton className="rounded-full p-4" background="">
+        <ShimmerButton
+          className="rounded-full p-4"
+          background=""
+          onClick={handleLinkedin}
+        >
           <a
             className="flex items-center gap-2  text-gray-700 bg-white  focus:scale-110 hover:scale-110 active:scale-105 hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/deependrasingh/"
@@ -150,7 +164,11 @@ const Intro = () => {
             <BsLinkedin />
           </a>
         </ShimmerButton>
-        <ShimmerButton className="rounded-full p-4" background="">
+        <ShimmerButton
+          className="rounded-full p-4"
+          background=""
+          onClick={handleGithub}
+        >
           <a
             className="flex items-center gap-2  text-gray-700 bg-white  focus:scale-110 hover:scale-110 active:scale-105 hover:text-gray-950 dark:bg-white/10 dark:text-white/60"
             href="https://github.com/trdxDeepu"
